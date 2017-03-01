@@ -14,4 +14,10 @@ require 'voltron/map/url_builder/style'
 require 'voltron/map/helpers/map_url_helper'
 require 'voltron/map/helpers/map_tag_helper'
 
+module Voltron
+  module Map
+    # Nothing here yet. Maybe someday
+  end
+end
+
 require "voltron/map/engine" if defined?(Rails)

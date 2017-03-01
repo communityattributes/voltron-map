@@ -45,7 +45,7 @@ module Voltron
   # The ultimate fallback. Only needed if the maps api either cannot be reached or api key is invalid
   # The image defined here will appear in place of the map. It can be either an image name, remote url,
   # or base64 encoded image valid for use in an <img /> tags `src` attribute. Default is invisible 1px gif
-  config.map.image_fallback = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
+  config.map.fallback_image = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
 
   # Default map parameters, so they do not need to be defined on each call to +map_tag+ or +map_url+
   # config.map.defaults = {}

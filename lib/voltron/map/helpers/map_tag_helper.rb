@@ -2,6 +2,8 @@ module Voltron
   module Map
     module MapTagHelper
 
+      include ::ActionView::Helpers::AssetTagHelper
+
       include ::Voltron::Map::MapUrlHelper
 
       def map_tag(address, options={}, image_options={}, &block)
