@@ -1,0 +1,9 @@
+<%= text_field_tag :address, '', class: 'input', data: { map: true, dispatch: 'place_changed' } %>
+
+<div id="map"></div>
+
+<%= map_tag([39.6888, -105], { size: 600, zoom: 12 }, { class: 'neato' }) do
+  style 'road.highway', 'geometry', visibility: :simplified, color: '0xc280e9'
+end %>
+
+<%= link_to 'Map', map_url('3481 W. 33rd Ave, Denver CO, 80211', size: 900, zoom: 18) { marker '3481 W. 33rd Ave, Denver CO, 80211' } %>
