@@ -7,8 +7,8 @@ module Voltron
       config.autoload_paths += Dir["#{config.root}/lib/**/"]
 
       initializer "voltron.map.initialize" do
-        ::ActionView::Helpers.send :include, ::Voltron::Map::MapUrlHelper
-        ::ActionView::Helpers.send :include, ::Voltron::Map::MapTagHelper
+        ::ActionView::Base.send :include, ::Voltron::Map::MapUrlHelper
+        ::ActionView::Base.send :include, ::Voltron::Map::MapTagHelper
       end
 
     end
