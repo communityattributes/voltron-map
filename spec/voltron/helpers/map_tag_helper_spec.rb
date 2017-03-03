@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Voltron::Map::MapTagHelper do
 
-  include ::ActionView::Helpers::AssetTagHelper
+  include ::Voltron::Map::MapTagHelper
 
   before(:each) do
     WebMock.allow_net_connect!

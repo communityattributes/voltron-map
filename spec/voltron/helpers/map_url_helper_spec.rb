@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Voltron::Map::MapUrlHelper do
 
-  include ::ActionView::Helpers::AssetUrlHelper
+  include ::Voltron::Map::MapUrlHelper
 
   before(:each) do
     WebMock.allow_net_connect!
