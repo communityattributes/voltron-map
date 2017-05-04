@@ -253,6 +253,8 @@ Voltron.addModule('Map', function(){
 
     // See: https://developers.google.com/maps/documentation/javascript/places-autocomplete
     addAutocomplete: function(element){
+      var dfr = $.Deferred();
+
       this.onApiLoad().done($.proxy(function(){
         $(element).each(function(){
           var self = $(this);
@@ -263,7 +265,10 @@ Voltron.addModule('Map', function(){
             self.trigger('place_changed', place);
           });
         });
-      }, this));
+        dfr.resolve();
+      }, this))
+
+      return dfr.promise();
     },
 
     getLatLong: function(input){
