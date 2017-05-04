@@ -266,7 +266,7 @@ Voltron.addModule('Map', function(){
           });
         });
         dfr.resolve();
-      }, this))
+      }, this));
 
       return dfr.promise();
     },
