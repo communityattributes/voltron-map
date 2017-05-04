@@ -9,7 +9,7 @@ Trying to find an easier way to generate various Google Maps
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'voltron-map'
+gem 'voltron-map', '~> 0.1.2'
 ```
 
 And then execute:
