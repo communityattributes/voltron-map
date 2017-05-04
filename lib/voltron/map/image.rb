@@ -34,7 +34,7 @@ module Voltron
             if response['X-Staticmap-API-Warning'].present?
               raise MapParamError.new(response['X-Staticmap-API-Warning']) if Voltron.config.map.fail_on_warning
               # If we don't fail on warnings, continue, but with the warning message logged
-              Voltron.log response['X-Staticmap-API-Warning'], 'Map', :light_yellow
+              Voltron.log response['X-Staticmap-API-Warning'], 'Map', Voltron::Map::LOG_COLOR
               # Return the url, but with the warning message and state
               [builder.url, response['X-Staticmap-API-Warning'], :warning]
             else

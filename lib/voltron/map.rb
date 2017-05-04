@@ -16,7 +16,9 @@ require 'voltron/map/helpers/map_tag_helper'
 
 module Voltron
   module Map
-    # Nothing here yet. Maybe someday
+
+    LOG_COLOR = :light_green
+
   end
 end
 
