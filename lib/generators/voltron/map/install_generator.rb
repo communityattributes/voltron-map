@@ -3,13 +3,11 @@ module Voltron
     module Generators
       class InstallGenerator < Rails::Generators::Base
 
-        source_root File.expand_path("../../../templates", __FILE__)
-
-        desc "Add Voltron Map initializer"
+        desc 'Add Voltron Map initializer'
 
         def inject_initializer
 
-          voltron_initialzer_path = Rails.root.join("config", "initializers", "voltron.rb")
+          voltron_initialzer_path = Rails.root.join('config', 'initializers', 'voltron.rb')
 
           unless File.exist? voltron_initialzer_path
             unless system("cd #{Rails.root.to_s} && rails generate voltron:install")

@@ -4,12 +4,13 @@ module Voltron
       module Install
         class AssetsGenerator < Rails::Generators::Base
 
-          source_root File.expand_path("../../../../templates", __FILE__)
+          # Expand to root of gem, all paths will be built from there
+          source_root File.expand_path('../../../../../../', __FILE__)
 
-          desc "Install Voltron Map assets"
+          desc 'Install Voltron Map assets'
 
           def copy_javascripts_assets
-            copy_file "app/assets/javascripts/voltron-map.js", Rails.root.join("app", "assets", "javascripts", "voltron-map.js")
+            copy_file 'app/assets/javascripts/voltron-map.js', Rails.root.join('app', 'assets', 'javascripts', 'voltron-map.js')
           end
 
         end
