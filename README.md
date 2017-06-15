@@ -1,4 +1,6 @@
+[![Coverage Status](https://coveralls.io/repos/github/ehainer/voltron-map/badge.svg?branch=master)](https://coveralls.io/github/ehainer/voltron-map?branch=master)
 [![Build Status](https://travis-ci.org/ehainer/voltron-map.svg?branch=master)](https://travis-ci.org/ehainer/voltron-map)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 # Voltron::Map
 
@@ -14,7 +16,7 @@ gem 'voltron-map', '~> 0.1.2'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -83,8 +85,8 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ehainer/voltron-encrypt. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ehainer/voltron-map. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
